@@ -4,6 +4,17 @@
 return [
 
     /**
+     * Album Review Plugin Name
+     */
+
+    'pluginName' => 'Album Review',
+
+    /**
+     * Table Prefix
+     */
+
+    'prefix' => 'ar_',
+    /**
      * The Herbert version constraint.
      */
     'constraint' => '~0.9.7',
@@ -61,21 +72,24 @@ return [
      * The routes to auto-load.
      */
     'routes' => [
-        'MyPlugin' => __DIR__ . '/app/routes.php'
+        'AlbumReview' => __DIR__ . '/app/routes.php',
+        'AlbumReviewInfo' => __DIR__ . '/app/routes.general.php'
     ],
 
     /**
      * The panels to auto-load.
      */
+
     'panels' => [
-        'MyPlugin' => __DIR__ . '/app/panels.php'
+        'AlbumReview' => __DIR__ . '/app/panels.php',
+        'AlbumReviewPanels' => __DIR__ . '/app/panels.general.php'
     ],
 
     /**
      * The APIs to auto-load.
      */
     'apis' => [
-        'MyPlugin' => __DIR__ . '/app/api.php'
+        'AlbumReview' => __DIR__ . '/app/api.php'
     ],
 
     /**
@@ -86,7 +100,7 @@ return [
      * when rendering a view in twig.
      */
     'views' => [
-        'MyPlugin' => __DIR__ . '/resources/views'
+        'AlbumReview' => __DIR__ . '/resources/views'
     ],
 
     /**

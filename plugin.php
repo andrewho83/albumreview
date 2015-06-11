@@ -2,11 +2,11 @@
 
 /**
  * @wordpress-plugin
- * Plugin Name:       MyPlugin
- * Plugin URI:        http://plugin-name.com/
- * Description:       A plugin.
+ * Plugin Name:       Album Review
+ * Plugin URI:        http://www.andrew-ho.com
+ * Description:       Album Review
  * Version:           1.0.0
- * Author:            Author
+ * Author:            Andrew Ho
  * Author URI:        http://author.com/
  * License:           MIT
  */
