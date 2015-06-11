@@ -6,6 +6,12 @@ $router->get([
     'uses' => __NAMESPACE__ . '\Controllers\AlbumController@showAlbum'
 ]);
 
+$router->get([
+    'as'   => 'info',
+    'uri'  => '/ar/albums',
+    'uses' => __NAMESPACE__ . '\Controllers\AlbumController@index'
+]);
+
 // $router->post([
 //     'as'   => 'simpleRoute',
 //     'uri'  => '/simple',

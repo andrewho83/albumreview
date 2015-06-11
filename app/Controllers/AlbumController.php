@@ -8,9 +8,16 @@ use Herbert\Framework\Notifier;
 
 class AlbumController {
 
+	public function index(Http $http) 
+	{
+		$albums = Album::all();
+
+		return json_response($albums);
+	}
+
 	public function createAlbum()
 	{
-		$title = '';
+		$title = 'test';
 
 		Album::create(['title' => $title]);
 
