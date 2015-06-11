@@ -7,3 +7,10 @@
 /** @var  \Herbert\Framework\Panel $panel */
 /** @var  \Herbert\Framework\Shortcode $shortcode */
 /** @var  \Herbert\Framework\Widget $widget */
+
+use Illuminate\Database\Capsule\Manager as Capsule;
+use Herbert\Framework\Notifier;
+
+Notifier::success('Finished deactivating.  Removing Album Tables');
+
+Capsule::schema()->dropIfExists('albums');
