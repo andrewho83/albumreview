@@ -49,6 +49,17 @@ class AlbumController {
 		}		
 	}
 
+	public function delete($id)
+	{
+		$album = Album::find($id);
+
+		if ($album) 
+		{
+			return json_encode(true);
+		}
+		return json_encode(false);
+	}
+
 	public function createAlbum()
 	{
 		return view('@AlbumReview/albums/create.twig', [
