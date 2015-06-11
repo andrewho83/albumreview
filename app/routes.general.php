@@ -1,15 +1,21 @@
 <?php namespace AlbumReview;
 
 $router->get([
-    'as'   => 'info',
-    'uri'  => '/ar/album/{id}',
-    'uses' => __NAMESPACE__ . '\Controllers\AlbumController@showAlbum'
+    'as'   	=> 'info',
+    'uri'  	=> '/ar/album/{id}',
+    'uses' 	=> __NAMESPACE__ . '\Controllers\AlbumController@showAlbum'
 ]);
 
 $router->get([
-    'as'   => 'info',
-    'uri'  => '/ar/albums',
-    'uses' => __NAMESPACE__ . '\Controllers\AlbumController@index'
+    'as'   	=> 'info',
+    'uri'  	=> '/ar/albums',
+    'uses' 	=> __NAMESPACE__ . '\Controllers\AlbumController@index'
+]);
+
+$router->post([
+	'as'   	=> 'uploadAlbum',
+	'uri'	=> '/ar/albums/upload',
+	'uses'	=> __NAMESPACE__ . '\Controllers\AlbumController@handleUpload'
 ]);
 
 // $router->post([

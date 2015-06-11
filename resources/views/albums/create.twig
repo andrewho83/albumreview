@@ -5,6 +5,13 @@
     </head>
     <body>
         <h1>Create an Album</h1>
-        <input type="text" name="title" placeholder="Enter album title" />
+
+        <form id="featured_upload" method="post" action="/ar/albums/upload" enctype="multipart/form-data">
+        	<input type="text" name="title" placeholder="Enter album title" />
+			<input type="file" name="my_image_upload" id="my_image_upload"  multiple="false" />
+			<input type="hidden" name="post_id" id="post_id" value="55" />
+            {{ nonce | raw }}
+			<input id="submit_my_image_upload" name="submit_my_image_upload" type="submit" value="Upload" />
+		</form>
     </body>
 </html>
