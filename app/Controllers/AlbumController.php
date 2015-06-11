@@ -8,11 +8,13 @@ use Herbert\Framework\Notifier;
 
 class AlbumController {
 
-	public function index(Http $http) 
+	public function allAlbums(Http $http) 
 	{
 		$albums = Album::all();
 
-		return json_response($albums);
+		return view('@AlbumReview/albums/all.twig', [
+			'albums' => $albums
+		]);
 	}
 
 	public function handleUpload(Http $http)

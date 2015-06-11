@@ -3,8 +3,17 @@
 $panel->add([
     'type'   => 'panel',
     'as'     => 'mainPanel',
+    'title'  => 'My Albums',
+    'slug'   => 'albumreview-index',
+    'icon'   => 'dashicons-media-audio',
+    'uses'   => __NAMESPACE__ . '\Controllers\AlbumController@allAlbums'
+]);
+
+$panel->add([
+    'type'   => 'panel',
+    'as'     => 'mainPanel',
     'title'  => 'Create Album',
-    'slug'   => 'myplugin-index',
+    'slug'   => 'albumreview-create',
     'icon'   => 'dashicons-media-audio',
     'uses'   => __NAMESPACE__ . '\Controllers\AlbumController@createAlbum'
 ]);
@@ -14,6 +23,6 @@ $panel->add([
     'parent' => 'mainPanel',
     'as'     => 'configure',
     'title'  => 'Configure',
-    'slug'   => 'myplugin-configure',
+    'slug'   => 'albumreview-configure',
     'uses'   => __NAMESPACE__ . '\Controllers\AdminController@configure'
 ]);
