@@ -1,12 +1,8 @@
-Herbert
+Album Review
 ===============
 
-Welcome to the Herbert. Please check out the docs [here](http://getherbert.com/).
+Built with the Herbert Framework.
 
-Check out the example plugin [here](https://github.com/getherbert/example-plugin).
-
----
-If your after the old version you can find it here: https://github.com/getherbert/herbert/tree/pre
-And the docs for that version: http://getherbert.com/pre
-
-
+Herbert
+===============
+Please check out the docs [here](http://getherbert.com/).
