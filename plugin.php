@@ -13,3 +13,12 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/vendor/getherbert/framework/bootstrap/autoload.php';
+
+add_filter('wp_handle_upload_prefilter', 'custom_upload_filter' );
+
+function custom_upload_filter( $file ){
+	if ($file['type'] == 'image/jpeg') {
+    	$file['name'] = 'wordpress-is-awesome-' . $file['name'];
+    }
+    return $file;
+}
