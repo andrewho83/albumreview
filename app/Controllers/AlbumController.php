@@ -17,13 +17,7 @@ class AlbumController {
 
 	public function createAlbum()
 	{
-		$title = 'test';
-
-		Album::create(['title' => $title]);
-
-		Notifier::success('Created an album with title: ' . $title);
-
-		return 'Success';
+		return view('@AlbumReview/albums/create.twig', ['album' => $album]);
 	}
 
 	public function showAlbum($id, Http $http)
@@ -40,6 +34,6 @@ class AlbumController {
 			return json_response($album);
 		}
 
-		return view('@MyPlugin/post/single.twig', ['album' => $album]);
+		return view('@AlbumReview/albums/single.twig', ['album' => $album]);
 	}
 }
