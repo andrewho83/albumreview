@@ -3,10 +3,10 @@
 $panel->add([
     'type'   => 'panel',
     'as'     => 'mainPanel',
-    'title'  => 'Album Review',
+    'title'  => 'Create Album',
     'slug'   => 'myplugin-index',
     'icon'   => 'dashicons-media-audio',
-    'uses'   => __NAMESPACE__ . '\Controllers\AdminController@index'
+    'uses'   => __NAMESPACE__ . '\Controllers\AlbumController@createAlbum'
 ]);
 
 $panel->add([

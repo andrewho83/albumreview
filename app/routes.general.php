@@ -2,11 +2,8 @@
 
 $router->get([
     'as'   => 'info',
-    'uri'  => '/ar/info',
-    'uses' => function()
-    {
-    	return 'Test';
-    }
+    'uri'  => '/ar/album/{id}',
+    'uses' => __NAMESPACE__ . '\Controllers\AlbumController@showAlbum'
 ]);
 
 // $router->post([
