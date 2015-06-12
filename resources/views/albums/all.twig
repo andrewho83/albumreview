@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Albums</title>
+    </head>
+    <body>
+        <h1>My Albums</h1>
+
+        <ol class="albums__list">
+        {% for album in albums %}
+	        <li>{{ album.title|e }}</li>
+	        <button class="btn btn-danger" data-params={{ album.id|e }}>Delete</button>
+	    {% endfor %}
+	    </ol>
+    </body>
+</html>

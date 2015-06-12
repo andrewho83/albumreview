@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Webpage</title>
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ styles }}" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Album View</h1>
+        <!-- <p>{{ album }}</p> -->
+        <input type="text" name="title" value="{{ album.title }}"/>
+        <button class="btn btn-danger update-title">Update Title</button>
+
+        <script src="{{ scripts }}"></script>
+    </body>
+</html>

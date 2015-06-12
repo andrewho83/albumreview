@@ -17,6 +17,17 @@ class AlbumController {
 		]);
 	}
 
+	public function preview($id)
+	{
+		$album = Album::find($id);
+
+		return view('@AlbumReview/albums/preview.twig', [
+			'album' 	=> $album,
+			'styles'	=> Helper::assetUrl('/css/styles.css'),
+			'scripts'	=> Helper::assetUrl('/js/app.js')
+		]);
+	}
+
 	public function handleUpload(Http $http)
 	{
 		if ( 
