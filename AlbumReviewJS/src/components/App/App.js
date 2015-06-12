@@ -49,7 +49,7 @@ class App {
         component = React.createElement(pages[page.component], page);
         break;
 
-      case '/contact':
+      case '/ar/album/1':
         component = <ContactPage />;
         break;
 

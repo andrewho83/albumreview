@@ -30,19 +30,19 @@ export default {
       path
     });
 
-    http.get('/api/query?path=' + encodeURI(path))
-      .accept('application/json')
-      .end((err, res) => {
-        Dispatcher.dispatch({
-          type: ActionTypes.RECEIVE_PAGE,
-          path,
-          err,
-          page: res ? res.body : null
-        });
-        if (cb) {
-          cb();
-        }
-      });
+    // http.get('/api/query?path=' + encodeURI(path))
+    //   .accept('application/json')
+    //   .end((err, res) => {
+    //     Dispatcher.dispatch({
+    //       type: ActionTypes.RECEIVE_PAGE,
+    //       path,
+    //       err,
+    //       page: res ? res.body : null
+    //     });
+    //     if (cb) {
+    //       cb();
+    //     }
+    //   });
   }
 
 };

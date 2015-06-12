@@ -37,7 +37,7 @@ const GLOBALS = {
 
 const config = {
   output: {
-    path: './build/',
+    path: '../resources/assets/js/',
     publicPath: './',
     sourcePrefix: '  '
   },
