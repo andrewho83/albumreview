@@ -16,6 +16,9 @@ node_modules
 ## Bower
 # src/components
 
+# AlbumReview Front End
+AlbumReviewJS/node_modules
+
 ## Sass
 .sass-cache
 
